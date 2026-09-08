@@ -1,0 +1,6 @@
+{
+  "name": "MinéraMaroc - Marketplace & Bourse des Minerais",
+  "description": "Plateforme marocaine de listing de minerais, reconnaissance géologique par IA, lecture d'analyses techniques de laboratoire et cotations de la bourse des minerais en direct.",
+  "requestFramePermissions": ["camera", "geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

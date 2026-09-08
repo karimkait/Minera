@@ -1,0 +1,239 @@
+@import "tailwindcss";
+
+/* ==========================================================================
+   OPTIMISATION PLEIN SOLEIL & TERRAIN (High-Contrast Outdoor Field Mode)
+   Conçu spécialement pour les géologues, ingénieurs et exploitants sur le terrain
+   (Anti-Atlas, Khouribga, Jerada, Midelt, Drâa-Tafilalet)
+   ========================================================================== */
+
+/* Anti-reflet global : suppression radicale des flous et effets de halo sous forte lumière */
+.sunlight-mode,
+.sunlight-mode * {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  text-shadow: none !important;
+}
+
+/* Toile de fond haute réflectance anti-éblouissement */
+html.sunlight-mode,
+body.sunlight-mode,
+.sunlight-mode {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+}
+
+/* En-tête et bandeaux ticker */
+.sunlight-mode header {
+  background-color: #ffffff !important;
+  border-bottom: 2px solid #64748b !important;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1) !important;
+}
+
+.sunlight-mode header .bg-stone-900\/60,
+.sunlight-mode header .bg-stone-900 {
+  background-color: #f8fafc !important;
+  border-bottom: 1.5px solid #94a3b8 !important;
+  color: #0f172a !important;
+}
+
+/* Bento Cards principales : passage en fond blanc solide mat, bordures nettes 1.5px */
+.sunlight-mode [class*="bg-stone-950"],
+.sunlight-mode [class*="bg-stone-900"] {
+  background-color: #ffffff !important;
+  border-color: #94a3b8 !important;
+  border-width: 1.5px !important;
+  color: #0f172a !important;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 0.08) !important;
+}
+
+/* Bento sous-cellules de spécifications (teneurs, GPS, volumes, incoterms, analyses) */
+.sunlight-mode [class*="bg-stone-950/"],
+.sunlight-mode [class*="bg-stone-900/"] {
+  background-color: #f8fafc !important;
+  border-color: #cbd5e1 !important;
+  border-width: 1.5px !important;
+}
+
+/* Renforcement des contrastes typographiques pour lecture directe au soleil */
+.sunlight-mode [class*="text-stone-100"],
+.sunlight-mode [class*="text-stone-200"] {
+  color: #000000 !important;
+  font-weight: 700 !important;
+}
+
+.sunlight-mode [class*="text-stone-300"],
+.sunlight-mode [class*="text-stone-400"],
+.sunlight-mode [class*="text-stone-500"],
+.sunlight-mode [class*="text-stone-600"] {
+  color: #1e293b !important;
+  font-weight: 600 !important;
+}
+
+/* Valeurs techniques clés, cours et pourcentages (Ambre / Or minier) */
+.sunlight-mode [class*="text-amber-400"],
+.sunlight-mode [class*="text-amber-500"],
+.sunlight-mode [class*="text-amber-300"] {
+  color: #92400e !important;
+  font-weight: 800 !important;
+}
+
+.sunlight-mode [class*="bg-amber-500/"] {
+  background-color: #fef3c7 !important;
+  border-color: #d97706 !important;
+  border-width: 1.5px !important;
+  color: #78350f !important;
+  font-weight: 700 !important;
+}
+
+/* Badges Émeraude (Conformité, GPS validé, hausse de cours) */
+.sunlight-mode [class*="text-emerald-400"],
+.sunlight-mode [class*="text-emerald-300"] {
+  color: #065f46 !important;
+  font-weight: 800 !important;
+}
+
+.sunlight-mode [class*="bg-emerald-500/"] {
+  background-color: #d1fae5 !important;
+  border-color: #059669 !important;
+  border-width: 1.5px !important;
+  color: #064e3b !important;
+  font-weight: 700 !important;
+}
+
+/* Badges Bleu (Certification Laboratoire agréé ONHYM / Reminex / SGS) */
+.sunlight-mode [class*="text-blue-300"],
+.sunlight-mode [class*="text-blue-400"] {
+  color: #1e40af !important;
+  font-weight: 800 !important;
+}
+
+.sunlight-mode [class*="bg-blue-500/"] {
+  background-color: #dbeafe !important;
+  border-color: #2563eb !important;
+  border-width: 1.5px !important;
+  color: #1e3a8a !important;
+  font-weight: 700 !important;
+}
+
+/* Badges Pourpre (Métaux précieux flottés g/t) */
+.sunlight-mode [class*="text-purple-300"],
+.sunlight-mode [class*="text-purple-400"] {
+  color: #581c87 !important;
+  font-weight: 800 !important;
+}
+
+.sunlight-mode [class*="bg-purple-500/"] {
+  background-color: #f3e8ff !important;
+  border-color: #9333ea !important;
+  border-width: 1.5px !important;
+  color: #581c87 !important;
+  font-weight: 700 !important;
+}
+
+/* Boutons d'action et CTA */
+.sunlight-mode button[class*="bg-amber-500"],
+.sunlight-mode [class*="from-amber-500"] {
+  background: #f59e0b !important;
+  color: #000000 !important;
+  border: 1.5px solid #b45309 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.15) !important;
+}
+
+.sunlight-mode button[class*="bg-stone-800"],
+.sunlight-mode button[class*="bg-stone-850"],
+.sunlight-mode button[class*="bg-stone-900"],
+.sunlight-mode button[class*="bg-stone-950"] {
+  background-color: #f1f5f9 !important;
+  color: #0f172a !important;
+  border: 1.5px solid #64748b !important;
+  font-weight: 700 !important;
+}
+
+.sunlight-mode button[class*="bg-stone-800"]:hover,
+.sunlight-mode button[class*="bg-stone-900"]:hover {
+  background-color: #e2e8f0 !important;
+}
+
+/* Navigation principale */
+.sunlight-mode nav {
+  background-color: #f1f5f9 !important;
+  border: 1.5px solid #cbd5e1 !important;
+}
+
+/* Formulaires, sélecteurs et entrées */
+.sunlight-mode input,
+.sunlight-mode select,
+.sunlight-mode textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+  border: 1.5px solid #64748b !important;
+  font-weight: 600 !important;
+}
+
+.sunlight-mode input::placeholder,
+.sunlight-mode textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Modales et fenêtres superposées */
+.sunlight-mode .fixed.inset-0.bg-black\/80,
+.sunlight-mode .fixed.inset-0.bg-black\/75,
+.sunlight-mode .fixed.inset-0.bg-stone-950\/80 {
+  background-color: rgba(15, 23, 42, 0.75) !important;
+}
+
+/* Tableaux techniques et bilans géochimiques */
+.sunlight-mode table {
+  border-collapse: collapse !important;
+}
+
+.sunlight-mode th {
+  background-color: #e2e8f0 !important;
+  color: #0f172a !important;
+  font-weight: 800 !important;
+  border-bottom: 2px solid #64748b !important;
+}
+
+.sunlight-mode td {
+  border-bottom: 1px solid #cbd5e1 !important;
+  color: #0f172a !important;
+}
+
+.sunlight-mode tr:nth-child(even) {
+  background-color: #f8fafc !important;
+}
+
+/* Graphiques et visualisations SVG */
+.sunlight-mode svg text {
+  fill: #0f172a !important;
+  font-weight: 700 !important;
+}
+
+.sunlight-mode svg line,
+.sunlight-mode svg path.domain {
+  stroke: #64748b !important;
+}
+
+/* Scrollbars personnalisées pour le plein soleil */
+.sunlight-mode ::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+.sunlight-mode ::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 6px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+

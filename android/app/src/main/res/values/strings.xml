@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MinéraMaroc</string>
+    <string name="app_description">Bourse &amp; Marketplace des Minerais au Maroc</string>
+    <string name="error_network">Erreur de connexion réseau. Veuillez vérifier votre connexion Internet.</string>
+    <string name="retry">Réessayer</string>
+    <string name="permission_camera_rationale">L\'accès à l\'appareil photo est requis pour photographier et identifier les roches minérales par IA.</string>
+    <string name="permission_location_rationale">La géolocalisation permet de déterminer automatiquement la région minière et le carreau d\'extraction.</string>
+</resources>
